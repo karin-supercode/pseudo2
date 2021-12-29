@@ -25,6 +25,25 @@ section p{
 section p:last-child{
     font-size:initial;
 }
+
+
+/* Alternative Schreibweise für obigen Selector 
+
+p:not(:last-child){
+    font-size: 26px;
+
+section:nth-of-type(1) p:nth-of-type(-1n +5){
+    font-size: 26px;
+}
+
+section:nth-of-type(1) p {
+    font-size: 26px;
+}
+section:nth-of-type(1) p:last-child {
+    font-size: unset;
+
+} */
+
 section p:nth-child(even){
     color: #0277bd;
 }
